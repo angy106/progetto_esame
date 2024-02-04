@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
-    private final List<Product> menu;
+    private List<Product> menu;
 
     // Constructor
     public Menu() {

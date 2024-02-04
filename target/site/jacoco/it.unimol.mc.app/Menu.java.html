@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="it"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Menu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">projectMcD</a> &gt; <a href="index.source.html" class="el_package">it.unimol.mc.app</a> &gt; <span class="el_source">Menu.java</span></div><h1>Menu.java</h1><pre class="source lang-java linenums">package it.unimol.mc.app;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Menu {
+    private List&lt;Product&gt; menu;
+
+    // Constructor
+<span class="fc" id="L10">    public Menu() {</span>
+<span class="fc" id="L11">        this.menu = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L12">        this.initializeProducts();</span>
+<span class="fc" id="L13">    }</span>
+
+    // Method to initialize products
+    private void initializeProducts() {
+<span class="fc" id="L17">        menu.add(new Product(&quot;Hamburger&quot;, 6.99, &quot;Juicy beef patty on a bun&quot;, &quot;Burger&quot;));</span>
+<span class="fc" id="L18">        menu.add(new Product(&quot;French Fries&quot;, 1.99, &quot;Crispy golden fries&quot;, &quot;Side&quot;));</span>
+<span class="fc" id="L19">        menu.add(new Product(&quot;Cheeseburger&quot;, 3.49, &quot;Delicious beef patty with melted cheese&quot;, &quot;Burger&quot;));</span>
+<span class="fc" id="L20">        menu.add(new Product(&quot;Chicken Nuggets&quot;, 4.99, &quot;Crispy chicken bites served with dipping sauce&quot;, &quot;Appetizer&quot;));</span>
+<span class="fc" id="L21">        menu.add(new Product(&quot;Salad&quot;, 5.99, &quot;Fresh mixed greens with tomatoes, cucumbers, and choice of dressing&quot;, &quot;Salad&quot;));</span>
+<span class="fc" id="L22">        menu.add(new Product(&quot;Soft Drink&quot;, 1.49, &quot;Refreshing carbonated beverage&quot;, &quot;Beverage&quot;));</span>
+<span class="fc" id="L23">        menu.add(new Product(&quot;Ice Cream Sundae&quot;, 3.99, &quot;Vanilla ice cream with chocolate syrup and whipped cream&quot;, &quot;Dessert&quot;));</span>
+<span class="fc" id="L24">    }</span>
+
+    public List&lt;Product&gt; getMenu(){
+<span class="fc" id="L27">        return this.menu;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
-    private List<Product> menu;
+    private final List<Product> menu;
 
     // Constructor
     public Menu() {
@@ -23,7 +23,7 @@ public class Menu {
         menu.add(new Product("Ice Cream Sundae", 3.99, "Vanilla ice cream with chocolate syrup and whipped cream", "Dessert"));
     }
 
-    public List<Product> getMenu(){
+    public List<Product> getMenu() {
         return this.menu;
     }
 }

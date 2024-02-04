@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.18">
+<file name="D:\Users\angel\Desktop\mcDonald\src\main\java\it\unimol\mc\app\Menu.java">
+</file>
+<file name="D:\Users\angel\Desktop\mcDonald\src\main\java\it\unimol\mc\app\Order.java">
+<error line="19" column="46" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="D:\Users\angel\Desktop\mcDonald\src\main\java\it\unimol\mc\app\Product.java">
+<error line="25" column="35" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="29" column="28" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+<file name="D:\Users\angel\Desktop\mcDonald\src\main\java\it\unimol\mc\app\ProductOfTheDay.java">
+<error line="34" column="39" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+</checkstyle>

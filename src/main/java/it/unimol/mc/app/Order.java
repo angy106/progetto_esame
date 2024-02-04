@@ -17,7 +17,7 @@ public class Order {
     }
 
     public List<Product> getOrderedProducts() {
-        return this.orderedProducts;
+        return new ArrayList<>(this.orderedProducts);
     }
 
     // Calculates the total of the order

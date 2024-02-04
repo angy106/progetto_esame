@@ -22,17 +22,40 @@ public class UserInteraction {
         this.menu = new Menu();
         this.prodDay = new ProductOfTheDay();
         this.order = new Order();
-        this.scanner = new Scanner(System.in);
-        this.printFirstMenu();
+        this.scanner = new Scanner(System.in, "UTF-8");
+        //this.printFirstMenu();
     }
 
     public void printFirstMenu() {
-        this.result = 0;
-        System.out.println("Benvenuto alla brutta copia del McDonald!\nCosa vorresti fare?");
-        System.out.println("1. Visualizzare il menu\n");
-        System.out.println("2. Visualizzare l'offerta di oggi\n");
-        System.out.println("3. Esci\n");
-        this.checkInput();
+        do {
+            this.result = 0;
+            System.out.println("Benvenuto alla brutta copia del McDonald!\nCosa vorresti fare?");
+            System.out.println("1. Visualizzare il menu\n");
+            System.out.println("2. Visualizzare l'offerta di oggi\n");
+            System.out.println("3. Esci\n");
+            choice = scanner.nextLine();
+            // Verifica se l'input è un intero a una cifra
+            if (choice.matches("[1-3]")) {
+                // Converte l'input in un intero
+                result = Integer.parseInt(choice);
+
+                switch (result) {
+                    case 1:
+                        checkMenu();
+                        break;
+                    case 2:
+                        displaySpecialMenu();
+                        break;
+                    case 3:
+                        System.out.println("Exiting...");
+                        exit(0);
+                    default:
+                        System.out.println("Invalid choice. Please try again.");
+                }
+            } else {
+                System.out.println("Invalid input. Please enter a single-digit integer (1-3).");
+            }
+        } while (result != 3);
     }
 
     public void checkInput() {
@@ -147,8 +170,7 @@ public class UserInteraction {
                             // Gestione dell'eccezione
                             e.printStackTrace();
                         }
-                        this.printFirstMenu();
-                        break;
+                        return;
                     case 1:
                     case 2:
                     case 3:
@@ -199,7 +221,7 @@ public class UserInteraction {
         System.out.println("\n1. Buy and exit");
         System.out.println("2. Continue ordering");
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in, "UTF-8");
         int choice = 0;
         do {
             System.out.print("Enter your choice: ");
@@ -216,10 +238,6 @@ public class UserInteraction {
                     System.out.println("Invalid choice. Please try again.");
             }
         } while (choice != 1 && choice != 2);
-    }
-
-    public Order getOrder() {
-        return this.order;
     }
 
 }

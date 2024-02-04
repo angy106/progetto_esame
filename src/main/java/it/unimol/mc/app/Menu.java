@@ -24,6 +24,6 @@ public class Menu {
     }
 
     public List<Product> getMenu() {
-        return this.menu;
+        return new ArrayList<>(this.menu);
     }
 }

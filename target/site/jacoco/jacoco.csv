@@ -1,7 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-projectMcD,it.unimol.mc.app,ProductOfTheDay,0,78,0,0,0,14,0,3,0,3
-projectMcD,it.unimol.mc.app,Menu,0,91,0,0,0,13,0,3,0,3
-projectMcD,it.unimol.mc.app,Order,0,38,0,2,0,11,0,5,0,4
-projectMcD,it.unimol.mc.app,Product,0,27,0,0,0,10,0,5,0,5
-projectMcD,it.unimol.mc.gui,UserInteraction,390,0,43,0,125,0,34,0,10,0
-projectMcD,it.unimol.mc,Main,8,0,0,0,3,0,2,0,2,0

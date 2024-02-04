@@ -22,11 +22,11 @@ public class Product {
         return this.name;
     }
 
-    public String getDescription(){
+    public String getDescription() {
         return this.description;
     }
 
-    public String getType(){
+    public String getType() {
         return this.type;
     }
 }

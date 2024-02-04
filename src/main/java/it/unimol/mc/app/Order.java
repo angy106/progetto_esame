@@ -16,7 +16,7 @@ public class Order {
         orderedProducts.add(product);
     }
 
-    public List<Product> getOrderedProducts(){
+    public List<Product> getOrderedProducts() {
         return this.orderedProducts;
     }
 

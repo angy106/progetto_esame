@@ -31,7 +31,7 @@ public class ProductOfTheDay {
         this.specialProduct = new Product(randomName, discountedPrice, description, type);
     }
 
-    public Product getSpecialProduct(){
+    public Product getSpecialProduct() {
         return this.specialProduct;
     }
 

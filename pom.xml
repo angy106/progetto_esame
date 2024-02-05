@@ -82,7 +82,6 @@
                 <groupId>com.github.spotbugs</groupId>
                 <artifactId>spotbugs-maven-plugin</artifactId>
                 <version>4.4.1</version>
-                <!--
                 <executions>
                     <execution>
                         <id>spotbugs-check</id>
@@ -92,7 +91,6 @@
                         </goals>
                     </execution>
                 </executions>
-                -->
             </plugin>
 
             <plugin>

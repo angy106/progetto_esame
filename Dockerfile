@@ -11,6 +11,6 @@ RUN git clone https://github.com/angy106/progetto_esame.git
 
 WORKDIR /progetto_esame
 
-RUN mvn package
+RUN mvn install
 
 CMD [ "java", "-jar", "target/projectMcD-1.0.0.jar" ]

@@ -99,6 +99,8 @@
                 <configuration>
                     <archive>
                         <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>target/classes/</classpathPrefix>
                             <mainClass>it.unimol.mc.Main</mainClass>
                         </manifest>
                     </archive>

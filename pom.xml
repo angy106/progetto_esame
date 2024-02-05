@@ -103,6 +103,9 @@
                             <classpathPrefix>target/classes/</classpathPrefix>
                             <mainClass>it.unimol.mc.Main</mainClass>
                         </manifest>
+                        <manifestEntries>
+                            <Built-By>Angy</Built-By>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>

@@ -8,8 +8,6 @@ import it.unimol.mc.app.ProductOfTheDay;
 import java.util.List;
 import java.util.Scanner;
 
-import static java.lang.System.exit;
-
 public class UserInteraction {
     private Menu menu;
     private Scanner scanner;
@@ -23,43 +21,15 @@ public class UserInteraction {
         this.prodDay = new ProductOfTheDay();
         this.order = new Order();
         this.scanner = new Scanner(System.in, "UTF-8");
-        //this.printFirstMenu();
+        System.out.println("Benvenuto alla brutta copia del McDonald!\nCosa vorresti fare?");
     }
 
     public void printFirstMenu() {
         do {
             this.result = 0;
-            System.out.println("Benvenuto alla brutta copia del McDonald!\nCosa vorresti fare?");
             System.out.println("1. Visualizzare il menu\n");
             System.out.println("2. Visualizzare l'offerta di oggi\n");
             System.out.println("3. Esci\n");
-            choice = scanner.nextLine();
-            // Verifica se l'input è un intero a una cifra
-            if (choice.matches("[1-3]")) {
-                // Converte l'input in un intero
-                result = Integer.parseInt(choice);
-
-                switch (result) {
-                    case 1:
-                        checkMenu();
-                        break;
-                    case 2:
-                        displaySpecialMenu();
-                        break;
-                    case 3:
-                        System.out.println("Exiting...");
-                        exit(0);
-                    default:
-                        System.out.println("Invalid choice. Please try again.");
-                }
-            } else {
-                System.out.println("Invalid input. Please enter a single-digit integer (1-3).");
-            }
-        } while (result != 3);
-    }
-
-    public void checkInput() {
-        do {
             choice = scanner.nextLine();
             // Verifica se l'input è un intero a una cifra
             if (choice.matches("[1-3]")) {
@@ -94,6 +64,7 @@ public class UserInteraction {
             System.out.println("If you want to see your cart, enter 'shop'\n");
             System.out.print("Enter your choice: \n");
             choice = scanner.nextLine();
+            result = 0;
             // Verifica se l'input è un intero da 0 a 7
             if (choice.matches("[0-1]")) {
                 // Converte l'input in un intero
@@ -108,7 +79,6 @@ public class UserInteraction {
                             // Gestione dell'eccezione
                             e.printStackTrace();
                         }
-                        this.printFirstMenu();
                         break;
                     case 1:
                         this.addToCart();
@@ -156,6 +126,7 @@ public class UserInteraction {
         do {
             this.displayMenu();
             choice = scanner.nextLine();
+            result = 0;
             // Verifica se l'input è un intero da 0 a 7
             if (choice.matches("[0-7]")) {
                 // Converte l'input in un intero
@@ -230,10 +201,10 @@ public class UserInteraction {
             switch (choice) {
                 case 1:
                     System.out.println("Thank you for your purchase!");
-                    exit(0);
+                    break;
                 case 2:
                     System.out.println("Continuing ordering...");
-                    return; // Return to the main menu
+                    break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }

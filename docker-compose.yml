@@ -1,6 +1,9 @@
-version: '1.0'
+version: '3.8'
+
 services:
   project:
-    image: fakemc
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: fakemc
     restart: unless-stopped

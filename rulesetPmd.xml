@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<ruleset name="My PMD Ruleset"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd"
+         xsi:noNamespaceSchemaLocation="http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+    <description>My personal PMD Ruleset</description>
+
+    <!-- Regola per individuare metodi privati non utilizzati -->
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod">
+        <priority>3</priority>
+    </rule>
+
+    <!-- Regola per verificare la presenza di dichiarazioni di ritorno superflue -->
+    <rule ref="category/java/codestyle.xml/UnnecessaryReturn">
+        <priority>3</priority>
+    </rule>
+
+    <!-- Regola per verificare la presenza di punti e virgola superflui -->
+    <rule ref="category/java/codestyle.xml/UnnecessarySemicolon">
+        <priority>3</priority>
+    </rule>
+
+    <!-- Regola per verificare la presenza di parentesi superflue -->
+    <rule ref="category/java/codestyle.xml/UselessParentheses">
+        <priority>3</priority>
+    </rule>
+
+</ruleset>

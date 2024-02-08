@@ -5,7 +5,7 @@ on:
     branches: [ "master" ]
 
   schedule:
-    - cron: '40 14 * * 6' # pianificazione del controllo generato casualmente. Avverrà ogni sabato alle 14:40
+    - cron: '30 18 * * 5' # ogni venerdì alle 18:30
 
 jobs:
   analyze:

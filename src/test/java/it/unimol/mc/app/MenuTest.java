@@ -15,11 +15,11 @@ public class MenuTest {
 
     @Test
     public void testGetMenu() {
-        // Verifica se il metodo getMenu restituisce correttamente il menu
+        // Verifico se il metodo getMenu restituisce correttamente il menu
         List<Product> products = menu.getMenu();
-        assertEquals(7, products.size()); // Verifica se ci sono 7 prodotti nel menu
+        assertEquals(7, products.size());
 
-        // Verifica se i prodotti sono correttamente inizializzati
+        // Verifico se i prodotti sono correttamente inizializzati
         assertEquals("Hamburger", products.get(0).getName());
         assertEquals(6.99, products.get(0).getPrice(), 0.01);
         assertEquals("Juicy beef patty on a bun", products.get(0).getDescription());

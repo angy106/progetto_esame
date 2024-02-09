@@ -14,6 +14,14 @@
         <maven.compiler.target>1.9</maven.compiler.target>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>deploy-repo</id>
+            <name>Local Deploy Repository</name>
+            <url>file://..\deploy\</url>
+        </repository>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
